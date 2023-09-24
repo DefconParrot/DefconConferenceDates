@@ -1,0 +1,5 @@
+theme: minima
+
+include:
+  - _sass
+  - assets/css/style.css

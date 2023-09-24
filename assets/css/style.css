@@ -1,0 +1,13 @@
+body {
+  background-color: #060606;
+  color: #3c6336;
+}
+body a {
+  color: #5f61c1;
+}
+body .markdown-body table tr {
+  background-color: #d8d8e6;
+}
+body .markdown-body table tr:nth-child(2n) {
+  background-color: #c7cacc;
+}/*# sourceMappingURL=style.css.map */
