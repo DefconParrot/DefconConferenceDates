@@ -1,16 +1,52 @@
+$body-background-color: #212121;
+$body-text-color: #58bb2b;
+$link-color: #a67341;
+$link-hover-color: #718456;
+$link-hover-text-decoration: underline;
+$title-color: #7ea464;
+$table-text-color: #fff;
+$table-header-background-color: #294f51;
+$table-even-row-background-color: #5D4037;
+$table-markdown-background-color: #d8d8e6;
+$table-markdown-even-row-background-color: #c7cacc;
+
 body {
-    background-color: #060606;
-    color: #3c6336;
+    background-color: $body-background-color;
+    color: $body-text-color;
 
     a {
-        color: #5f61c1;
+        color: $link-color;
+
+        &:hover {
+            color: $link-hover-color;
+            text-decoration: $link-hover-text-decoration;
+        }
     }
 
-    .markdown-body table tr {
-        background-color: #d8d8e6;
+    .site-title,
+    .site-title:visited {
+        color: $title-color;
+    }
 
-        &:nth-child(2n) {
-            background-color: #c7cacc;
+    table {
+        color: $table-text-color;
+
+        th {
+            background-color: $table-header-background-color;
+        }
+
+        tr:nth-child(even) {
+            background-color: $table-even-row-background-color;
+        }
+
+        &.markdown-body {
+            tr {
+                background-color: $table-markdown-background-color;
+
+                &:nth-child(2n) {
+                    background-color: $table-markdown-even-row-background-color;
+                }
+            }
         }
     }
 }

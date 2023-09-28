@@ -1,13 +1,30 @@
 body {
-  background-color: #060606;
-  color: #3c6336;
+  background-color: #212121;
+  color: #58bb2b;
 }
 body a {
-  color: #5f61c1;
+  color: #a67341;
 }
-body .markdown-body table tr {
+body a:hover {
+  color: #718456;
+  text-decoration: underline;
+}
+body .site-title,
+body .site-title:visited {
+  color: #7ea464;
+}
+body table {
+  color: #fff;
+}
+body table th {
+  background-color: #294f51;
+}
+body table tr:nth-child(even) {
+  background-color: #5D4037;
+}
+body table.markdown-body tr {
   background-color: #d8d8e6;
 }
-body .markdown-body table tr:nth-child(2n) {
+body table.markdown-body tr:nth-child(2n) {
   background-color: #c7cacc;
 }/*# sourceMappingURL=style.css.map */
