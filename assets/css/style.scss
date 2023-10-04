@@ -1,52 +1,52 @@
-$body-background-color: #212121;
-$body-text-color: #58bb2b;
+$body-bg: #212121;
+$text-color: #58bb2b;
 $link-color: #a67341;
 $link-hover-color: #718456;
-$link-hover-text-decoration: underline;
-$title-color: #7ea464;
-$table-text-color: #fff;
-$table-header-background-color: #294f51;
-$table-even-row-background-color: #5D4037;
-$table-markdown-background-color: #d8d8e6;
-$table-markdown-even-row-background-color: #c7cacc;
+$link-hover-decoration: underline;
+$site-title-color: #7ea464;
+$table-color: #fff;
+$table-header-bg: #294f51;
+$table-even-row-bg: #5D4037;
+$table-markdown-tr-bg: #d8d8e6;
+$table-markdown-tr-even-bg: #c7cacc;
 
 body {
-    background-color: $body-background-color;
-    color: $body-text-color;
-
-    a {
-        color: $link-color;
-
-        &:hover {
-            color: $link-hover-color;
-            text-decoration: $link-hover-text-decoration;
-        }
-    }
+    background-color: $body-bg;
+    color: $text-color;
 
     .site-title,
     .site-title:visited {
-        color: $title-color;
+        color: $site-title-color;
     }
 
     table {
-        color: $table-text-color;
+        color: $table-color;
 
         th {
-            background-color: $table-header-background-color;
+            background-color: $table-header-bg;
         }
 
         tr:nth-child(even) {
-            background-color: $table-even-row-background-color;
+            background-color: $table-even-row-bg;
         }
 
         &.markdown-body {
             tr {
-                background-color: $table-markdown-background-color;
+                background-color: $table-markdown-tr-bg;
 
                 &:nth-child(2n) {
-                    background-color: $table-markdown-even-row-background-color;
+                    background-color: $table-markdown-tr-even-bg;
                 }
             }
         }
+    }
+}
+
+a {
+    color: $link-color;
+
+    &:hover {
+        color: $link-hover-color;
+        text-decoration: $link-hover-decoration;
     }
 }

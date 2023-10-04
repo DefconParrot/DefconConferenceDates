@@ -2,13 +2,6 @@ body {
   background-color: #212121;
   color: #58bb2b;
 }
-body a {
-  color: #a67341;
-}
-body a:hover {
-  color: #718456;
-  text-decoration: underline;
-}
 body .site-title,
 body .site-title:visited {
   color: #7ea464;
@@ -27,4 +20,12 @@ body table.markdown-body tr {
 }
 body table.markdown-body tr:nth-child(2n) {
   background-color: #c7cacc;
+}
+
+a {
+  color: #a67341;
+}
+a:hover {
+  color: #718456;
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */
